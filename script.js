@@ -16,9 +16,9 @@ const options = {
 // 	console.error(error);
 // }
 
-fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle', options)
+fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi', options)
     .then(response => response.json())
-    .then(response => {
+    .then((response) => {
 
         cloud_pct.innerHTML = response.cloud_pct
         feels_like.innerHTML = response.feels_like
