@@ -8,13 +8,6 @@ const options = {
     }
 };
 
-// try {
-// 	const response = await fetch(url, options);
-// 	const result = await response.text();
-// 	console.log(result); ̰
-// } catch (error) {
-// 	console.error(error);
-// }
 const getWeather = (city) => {
     cityName.innerHTML= city 
     fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
