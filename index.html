@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
   <body>
 
 <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Weather App</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,21 +21,21 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About this App</a>
+                <a class="nav-link" href="https://github.com/avikapoor24/Weather-App">About this App</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Other most searched Cities
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Delhi</a></li>
-                  <li><a class="dropdown-item" href="#">Seattle</a></li>
+                  <li><a class="dropdown-item" href="#">Canada</a></li>
                   <!-- <li><hr class="dropdown-divider"></li> -->
-                  <li><a class="dropdown-item" href="#">Banglore</a></li>
+                  <li><a class="dropdown-item" href="#">Bangalore</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <!-- <a class="nav-link disabled">Disabled</a> -->
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -53,50 +53,53 @@
             <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
-                  <div class="card-header py-3">
+                  <div class="card-header py-3 text-bg-dark">
                     <h4 class="my-0 fw-normal">Temperature</h4>
                   </div>
+
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
+                    <!-- <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                    <ul class="list-unstyled mt-3 mb-5">
                       <li>Temperature is <span id="temp"></span></li>
                       <li>Min Temperature is <span id="min_temp"></span></li>
                       <li>Max Temperature is <span id="max_temp"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button> -->
                   </div>
                 </div>
               </div>
+              
               <div class="col">
                 <div class="card mb-4 rounded-3 shadow-sm">
-                  <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Pro</h4>
+                  <div class="card-header py-3 text-bg-dark">
+                    <h4 class="my-0 fw-normal">Humidity Info</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-                    <ul class="list-unstyled mt-3 mb-4">
+                    <!-- <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1> -->
+                    <ul class="list-unstyled mt-3 mb-5">
                         <li>Cloud PCT is <span id="cloud_pct"></span></li>
                         <li>Feels like <span id="feels_like"></span></li>
                         <li>Humidity is <span id="humidity"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button> -->
                   </div>
                 </div>
               </div>
+
               <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                  <div class="card-header py-3 text-bg-primary border-primary">
-                    <h4 class="my-0 fw-normal">Enterprise</h4>
+                <div class="card mb-4 rounded-3 shadow-sm">
+                  <div class="card-header py-3 text-bg-dark">
+                    <h4 class="my-0 fw-normal">Wind Info</h4>
                   </div>
                   <div class="card-body">
-                    <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                    <!-- <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1> -->
                     <ul class="list-unstyled mt-3 mb-4">
                         <li>Wind degrees is <span id="wind_degrees"></span></li>
                         <li>Wind Speed is <span id="wind_speed"></span></li>
                         <li>Sunset Time is <span id="sunset"></span></li>
                         <li>Sunrise Time is <span id="sunrise"></span></li>
                     </ul>
-                    <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    <!-- <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button> -->
                   </div>
                 </div>
               </div>
