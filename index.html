@@ -9,9 +9,9 @@
   <body>
 
 <!-- Nav Bar -->
-    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Weather App</a>
+    <nav data-bs-theme="light" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: rgb(235, 239, 173); border-radius: 0;" >
+          <a class="navbar-brand" href="#" style="color: darkseagreen;">Weather App</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,23 +25,57 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Other most searched Cities
-                </a>
-                <ul class="dropdown-menu">
+                 Most searched Cities</a>
+                <!-- <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center"> -->
+                    <ul class="dropdown-menu" d-block mx-0 shadow w-220px data-bs-theme="light">
+                      <li>
+                        <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                          <svg class="bi" width="16" height="16"><use xlink:href="#files"></use></svg>
+                          New York, USA
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                          <svg class="bi" width="16" height="16"><use xlink:href="#image-fill"></use></svg>
+                          London, UK
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                          <svg class="bi" width="16" height="16"><use xlink:href="#film"></use></svg>
+                          Paris, France
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+                          <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"></use></svg>
+                          Tokyo, Japan
+                        </a>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li>
+                        <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
+                          <svg class="bi" width="16" height="16"><use xlink:href="#trash"></use></svg>
+                          Help</a>
+                      </li>
+                   
+                    <!-- </div> -->
+                <!-- <ul class="dropdown-menu" d-grid gap-1 p-2 rounded-3 mx-0 shadow w-220px" data-bs-theme="light">
                   <li><a class="dropdown-item" href="#">Delhi</a></li>
                   <li><a class="dropdown-item" href="#">Canada</a></li>
-                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  
                   <li><a class="dropdown-item" href="#">Bangalore</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link disabled">Disabled</a> -->
+                </ul> -->
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input id="city" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+           </ul>
+             
+            <form class="d-flex" role="search" style="width: fit-content;">
+              <input id="city" class="form-control me-2" type="search" placeholder="Search City" aria-label="Search">
               <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
             </form>
+            
+        
           </div>
         </div>
       </nav>
